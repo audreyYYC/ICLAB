@@ -3,58 +3,68 @@
 **Advanced geometric algorithm accelerator with incremental convex hull computation and verification pattern generation**
 
 ## System Overview
-Hardware implementation of computational geometry algorithms for real-time convex hull computation. Designed for applications in computer graphics, pattern recognition, robotics, and geometric data processing requiring efficient convex polygon determination.
+Hardware implementation of computational geometry algorithms for real-time convex hull computation. Designed for applications in computer graphics, pattern recognition, robotics, and geometric data processing.
 
 ## Verified Performance Results
 
 ### Timing & Area (UMC 0.18μm)
 - **Cycle Time**: 11.0ns (high-frequency geometric computation)
 - **Total Cell Area**: 1,071,556 μm² (complex geometric algorithm optimization)
-- **Variable Latency**: Adaptive processing based on geometric complexity
+- **Processing**: Variable latency based on input geometric complexity
 - **Technology**: UMC 0.18μm standard cell library
 
 ### Verification Status
 - ✅ **RTL Simulation**: Functional verification passed
-- ✅ **Synthesis**: Latch-free implementation with timing closure  
+- ✅ **Synthesis**: Latch-free implementation with timing closure
 - ✅ **Gate-Level Simulation**: Post-synthesis verification confirmed
 - ✅ **Pattern Verification**: Custom verification environment with golden reference
 
 ## Key Technical Features
-
-### Geometric Algorithm Implementation
 - **Incremental Hull Construction**: Real-time convex hull updates with point insertion
-- **Point Classification**: Inside/outside/collinear point detection algorithms
-- **Vertex Management**: Dynamic polygon vertex tracking and optimization
-- **Tangency Computation**: Geometric tangent point calculation for hull updates
-
-### Advanced Verification Framework
-- **Custom Pattern Generation**: Self-designed verification environment
-- **Golden Reference Model**: Software reference for correctness validation
-- **Specification Compliance**: Multi-level verification (SPEC-4 through SPEC-9)
-- **Edge Case Handling**: Collinear points, coincident points, and boundary conditions
-
-## Implementation Highlights
-- **Adaptive Processing**: Variable cycle latency based on geometric complexity
-- **Memory Efficient**: Optimized polygon representation up to 128 vertices
-- **Real-Time Operation**: Incremental updates suitable for streaming applications
-- **Production Quality**: Comprehensive pattern verification with 50% design + 30% pattern grading
+- **Point Classification**: Inside/outside/collinear detection algorithms
+- **Custom Verification**: Self-designed pattern generation framework
+- **Adaptive Processing**: Variable cycle latency optimized for geometric complexity
 
 ## Technical Specifications
-- **Input Processing**: 10-bit coordinate points (0-1023 range)
-- **Polygon Capacity**: Up to 128 vertices maximum
-- **Output Format**: Discarded point coordinates with count
-- **Processing Mode**: Incremental convex hull with immediate output
+- **Input**: 10-bit coordinate points (0-1023 range), up to 500 points per pattern
+- **Output**: Discarded point coordinates with count (variable 0-multiple points)
+- **Processing**: Incremental geometric computation with immediate output
+- **Verification**: 50% design + 30% pattern + 20% performance grading
 
-## Algorithm Complexity
-- **Geometric Computation**: Point-in-polygon testing with cross products
-- **Hull Updates**: Tangent-based vertex insertion and removal
-- **Optimization**: Efficient vertex storage and polygon traversal
-- **Robustness**: Handles degenerate cases (collinear, coincident points)
+*Production-ready computational geometry engine for computer graphics, robotics, and pattern recognition applications*
+# Update Lab03 README to highlight performance metrics prominently
+cat > lab03-computational-geometry-convex/README.md << 'EOF'
+# Computational Geometry: Convex Hull Processor
 
-## Application Domains
-- **Computer Graphics**: Real-time collision detection and shape simplification
-- **Robotics**: Path planning and obstacle avoidance with convex approximations
-- **Pattern Recognition**: Feature extraction and shape analysis
-- **Geographic Information Systems**: Spatial data processing and boundary determination
+**Advanced geometric algorithm accelerator with incremental convex hull computation and verification pattern generation**
 
-*Production-ready computational geometry engine for advanced geometric processing applications*
+## System Overview
+Hardware implementation of computational geometry algorithms for real-time convex hull computation. Designed for applications in computer graphics, pattern recognition, robotics, and geometric data processing.
+
+## Verified Performance Results
+
+### Timing & Area (UMC 0.18μm)
+- **Cycle Time**: 11.0ns
+- **Total Cell Area**: 1,071,556 μm²
+- **Processing**: Variable latency based on input geometric complexity
+- **Technology**: UMC 0.18μm standard cell library
+
+### Verification Status
+- **RTL Simulation**: Functional verification passed
+- **Synthesis**: Latch-free implementation with timing closure
+- **Gate-Level Simulation**: Post-synthesis verification confirmed
+- **Pattern Verification**: Custom verification environment with golden reference
+
+## Key Technical Features
+- **Incremental Hull Construction**: Real-time convex hull updates with point insertion
+- **Point Classification**: Inside/outside/collinear detection algorithms
+- **Custom Verification**: Self-designed pattern generation framework
+- **Adaptive Processing**: Variable cycle latency optimized for geometric complexity
+
+## Technical Specifications
+- **Input**: 10-bit coordinate points (0-1023 range), up to 500 points per pattern
+- **Output**: Discarded point coordinates with count (variable 0-multiple points)
+- **Processing**: Incremental geometric computation with immediate output
+- **Verification**: 50% design + 30% pattern + 20% performance grading
+
+*Production-ready computational geometry engine for computer graphics, robotics, and pattern recognition applications*
