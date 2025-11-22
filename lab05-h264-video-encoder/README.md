@@ -63,4 +63,7 @@ Hardware implementation of H.264/AVC video compression pre-entropy encoder. Desi
 - **Mobile Video**: Power-efficient encoding for smartphone cameras
 - **Broadcast Television**: High-quality video compression for transmission
 
+## Note on SRAM Files
+This design integrates Faraday SRAM compiler IP (4096 words × 32 bits, single-port synchronous SRAM). The SRAM files (MEM.v, MEM_WC.db) are proprietary and not included in this public repository per Faraday Technology Corp. licensing terms.
+
 *Production-ready H.264 video encoding engine for embedded video compression and streaming applications*
