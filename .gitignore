@@ -1,0 +1,49 @@
+# Operating-system and editor files
+.DS_Store
+._*
+__pycache__/
+*.py[cod]
+
+# Simulation and waveform output
+*.fsdb
+*.vcd
+*.vpd
+*.wlf
+*.log
+*.key
+simv*
+csrc/
+ucli.key
+
+# Synthesis, timing, and APR output
+*.sdf
+*.spef
+*.sdc
+*.db
+*.lib
+*.lef
+*.gds
+*.gds2
+*.def
+*.inn
+*.enc
+*.dat
+*.gz
+*.bin
+*.tcl
+*.f
+*.io
+*.CapTbl
+04_MEM*/
+*.inn.dat/
+AAE/
+ccopt/
+libs/
+mmmc/
+
+# Course material and generated patterns
+*.pdf
+PATTERN*.v
+input.txt
+output.txt
+
