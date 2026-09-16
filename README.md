@@ -1,6 +1,7 @@
 # Digital IC Design Portfolio
 
-Selected work from a semester-long integrated-circuit design laboratory, progressing from algorithmic RTL to synthesis-aware design, clock-domain crossing, SystemVerilog, memory-based accelerators, and automatic place-and-route.
+Selected coursework from Integrated Circuit Design Laboratory (積體電路設計實驗) at National Yang Ming Chiao Tung University (NYCU), Fall 2025. This intensive, project-based course covered RTL architecture, functional verification, synthesis, static timing analysis, clock-domain crossing, formal verification, gate-level simulation, and complete automatic place-and-route.
+
 
 ## Portfolio at a glance
 
