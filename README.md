@@ -1,7 +1,6 @@
 # Digital IC Design Portfolio
 
-Selected coursework from Integrated Circuit Design Laboratory (積體電路設計實驗) at National Yang Ming Chiao Tung University (NYCU), Fall 2025. This intensive, project-based course covered RTL architecture, functional verification, synthesis, static timing analysis, clock-domain crossing, formal verification, gate-level simulation, and complete automatic place-and-route.
-
+Selected coursework from Integrated Circuit Design Laboratory (積體電路設計實驗) at National Yang Ming Chiao Tung University (NYCU), Fall 2025. This intensive, project-based course covered RTL architecture, functional verification, synthesis, static timing analysis, clock-domain crossing, formal CDC analysis, gate-level simulation, and complete automatic place-and-route.
 
 ## Portfolio at a glance
 
@@ -13,12 +12,11 @@ Selected coursework from Integrated Circuit Design Laboratory (積體電路設�
 | [CNN Accelerator](04-cnn-accelerator/) | Two floating-point CNN-oriented workloads | Arithmetic scheduling, resource reuse, DesignWare integration |
 | [H.264 Processing Engine](05-h264-processing-engine/) | Intra prediction, transform, quantization, and reconstruction | SRAM scheduling, image/video arithmetic, complex control |
 | [Poker Win-Rate Calculator](06-poker-win-rate-calculator/) | Parameterized hand evaluator and exhaustive turn/river analysis | Reusable IP, ranking/tie logic, Python golden model |
-| [Multiclock NTT Accelerator](07-multiclock-ntt-accelerator/) | 128-point NTT across three asynchronous clock domains | Modular arithmetic, handshake CDC, asynchronous FIFO |
-| [SystemVerilog RPG Controller](09-systemverilog-rpg/) | DRAM-backed transactional state machine | SystemVerilog types/interfaces, protocol control, data integrity |
+| [Multiclock NTT Accelerator](07-multiclock-ntt-accelerator/) | 128-point NTT across three asynchronous clock domains | Modular arithmetic, handshake CDC, asynchronous FIFO, JasperGold CDC analysis |
 | [16-Bit CPU](midterm-16bit-cpu/) | Custom RISC-style core with separate instruction/data traffic | ISA design, cache refill control, AXI-style handshakes |
 | [Geometric Transform Engine](11-geometric-transform-engine/) | 15 image transforms over a heterogeneous SRAM organization | Address generation, memory packing, RTL/Python co-verification |
-| [Physical Design Flow](12-physical-design-flow/) | Full synthesis-to-post-layout implementation case study | Floorplanning, power planning, CTS, routing, timing closure |
-| [MVDM Accelerator](final-mvdm-accelerator/) | Half-pixel interpolation and SATD-based motion matching | FIR filtering, Hadamard pipeline, SRAM-aware image processing |
+| [Backend APR and Power Analysis](12-physical-design-flow/) | Backend implementation of a TA-provided static-timing graph analyzer netlist | Floorplanning, power planning, CTS, routing, STA, power and IR-drop analysis |
+| [MVDM Accelerator](final-mvdm-accelerator/) | SRAM-based half-pixel interpolation and SATD motion matching through post-layout verification | FIR filtering, Hadamard pipeline, SRAM macro integration, RTL-to-post-layout flow |
 
 ## Design flow covered
 

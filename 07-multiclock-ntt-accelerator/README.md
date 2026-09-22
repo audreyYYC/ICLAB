@@ -1,6 +1,6 @@
 # Multiclock NTT Accelerator
 
-A 128-point Number Theoretic Transform subsystem spanning three asynchronous clock domains. The project combines finite-field arithmetic with explicit clock-domain-crossing structures and formal CDC verification.
+A 128-point Number Theoretic Transform subsystem spanning three asynchronous clock domains. The project combines finite-field arithmetic with explicit clock-domain-crossing structures and structural CDC analysis.
 
 ## At a glance
 
@@ -35,9 +35,8 @@ Loop-index counters generate the butterfly addresses, stage stride, and twiddle 
 - The input handshake keeps the source request asserted until the destination captures a stable 128-coefficient payload and returns acknowledgement.
 - The output asynchronous FIFO uses independently clocked read/write pointers, Gray-code synchronization, and full/empty detection.
 - FIFO storage is represented by a generic dual_port_sram_64x16 placeholder; the licensed course memory model is excluded.
-- CDC structures were checked with JasperGold using the course formal flow.
+- CDC structures were analyzed with Cadence JasperGold CDC using the course flow.
 
 ## Repository scope
 
 The student compute and synchronizer modules are included. The instructor top-level wrapper, synchronizer primitives, formal script, and proprietary SRAM collateral are not published, so this directory documents a subsystem rather than a standalone build.
-
