@@ -4,14 +4,14 @@
 //   All Right Reserved
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
-//   ICLAB 2021 Final Project: Customized ISA Processor 
+//   ICLAB 2025 Midterm Project: Customized ISA Processor 
 //   Author              : Yen-Yu Chen
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
 //   File Name   : CPU.v
 //   Module Name : CPU.v
-//   Release version : V1.0 (Release Date: 2021-May)
+//   Release version : V1.0
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //############################################################################
